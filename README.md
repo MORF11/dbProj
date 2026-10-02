@@ -2,10 +2,10 @@
 ## Система управления заявками и ресурсами организации для компании вашПромоутер
 
 ER диаграмма
-![ER-diagram](media/er.png)
+![ER-diagram](./media/er.png)
 
 Диаграмма базы данных
-![DB-diagram](media/db.png)
+![DB-diagram](./media/db.png)
 
 ## API enpoints:
 # Clients
