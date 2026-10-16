@@ -1,29 +1,8 @@
 [
   {
-    "ContainingType": "WebApplication1.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "api/v1/WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.WeatherForecast, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.WeatherForecastController",
+    "ContainingType": "WebApplication1.Controllers.Controller",
     "Method": "GetClient",
-    "RelativePath": "api/v1/WeatherForecast/getClient",
+    "RelativePath": "api/v1/getClient",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -36,7 +15,43 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "WebApplication1.Client",
+        "Type": "System.Collections.Generic.IAsyncEnumerable\u00601[[WebApplication1.Client, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.Controller",
+    "Method": "PostClient",
+    "RelativePath": "api/v1/postClient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tariff",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "contacts",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IAsyncEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
