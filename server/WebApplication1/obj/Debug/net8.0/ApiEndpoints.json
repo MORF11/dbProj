@@ -15,7 +15,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IAsyncEnumerable\u00601[[WebApplication1.Client, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "WebApplication1.Client",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -34,31 +34,11 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "tariff",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "contacts",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "cl",
+        "Type": "WebApplication1.Client",
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IAsyncEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

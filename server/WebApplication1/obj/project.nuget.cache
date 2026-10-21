@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sHvE7kX/83s=",
+  "dgSpecHash": "Zs3BpvMsYns=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Академия ТОП\\Desktop\\dbProj\\server\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Академия ТОП\\Desktop\\server\\dbProj\\server\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Академия ТОП\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",
     "C:\\Users\\Академия ТОП\\.nuget\\packages\\microsoft.data.sqlclient\\7.1.1\\microsoft.data.sqlclient.7.1.1.nupkg.sha512",
@@ -33,11 +33,7 @@
     "C:\\Users\\Академия ТОП\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.16.0\\system.identitymodel.tokens.jwt.8.16.0.nupkg.sha512",
     "C:\\Users\\Академия ТОП\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\Академия ТОП\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
-    "C:\\Users\\Академия ТОП\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512",
-    "C:\\Users\\Академия ТОП\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.32\\microsoft.windowsdesktop.app.ref.8.0.32.nupkg.sha512",
-    "C:\\Users\\Академия ТОП\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.32\\microsoft.netcore.app.ref.8.0.32.nupkg.sha512",
-    "C:\\Users\\Академия ТОП\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.32\\microsoft.aspnetcore.app.ref.8.0.32.nupkg.sha512",
-    "C:\\Users\\Академия ТОП\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.32\\microsoft.netcore.app.host.win-x64.8.0.32.nupkg.sha512"
+    "C:\\Users\\Академия ТОП\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

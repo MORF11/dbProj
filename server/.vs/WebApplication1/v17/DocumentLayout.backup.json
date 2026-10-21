@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\ado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\ado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF8A2F2C-942E-46B5-B8D7-B288455AE168}|WebApplication1\\WebApplication1.csproj|c:\\users\\\u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0442\u043E\u043F\\desktop\\server\\dbproj\\server\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,19 +30,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\Controllers\\Controller.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Controller.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\Controllers\\Controller.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\Controller.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T08:04:36.032Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WebApplication1.http",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\WebApplication1.http",
-              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.http",
-              "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\WebApplication1.http",
-              "RelativeToolTip": "WebApplication1\\WebApplication1.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-10-15T10:54:22.723Z",
+              "Title": "Classes.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\Classes.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Classes.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\Classes.cs",
+              "RelativeToolTip": "WebApplication1\\Classes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T08:18:30.083Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -53,22 +68,23 @@
               "RelativeDocumentMoniker": "WebApplication1\\ado.cs",
               "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\ado.cs",
               "RelativeToolTip": "WebApplication1\\ado.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA4wB0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T10:53:52.157Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\WeatherForecast.cs",
-              "RelativeToolTip": "WebApplication1\\WeatherForecast.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA1wA4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T09:43:19.636Z",
+              "Title": "WebApplication1.http",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\WebApplication1.http",
+              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.http",
+              "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\WebApplication1.http",
+              "RelativeToolTip": "WebApplication1\\WebApplication1.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-10-15T10:54:22.723Z",
               "EditorCaption": ""
             },
             {
@@ -82,19 +98,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T09:43:18.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0422\u041E\u041F\\Desktop\\server\\dbProj\\server\\WebApplication1\\Controllers\\WeatherForecastController.cs*",
-              "RelativeToolTip": "WebApplication1\\Controllers\\WeatherForecastController.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T09:43:12.729Z",
               "EditorCaption": ""
             }
           ]
