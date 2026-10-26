@@ -1,0 +1,71 @@
+>----------------------------------------------------------------------------------------TABLES--------------------------------------------------------------------------------------------<
+
+CREATE TABLE Clients (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    clientsName NVARCHAR(50) NOT NULL,
+    tariff INT NOT NULL,
+    contacts NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE OrdersHistory (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    company_id INT NOT NULL,
+    deadline DATETIME2 NOT NULL,
+    cost INT NOT NULL,
+    areas NVARCHAR(100) NOT NULL,
+    FOREIGN KEY (company_id) REFERENCES Clients (id) ON DELETE CASCADE
+);
+
+CREATE TABLE Requests (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    stage NVARCHAR(20) NOT NULL,
+    company_id INT NOT NULL,
+    deadline DATETIME2  NOT NULL,
+    cost INT NOT NULL,
+    areas NVARCHAR(100) NOT NULL,
+    FOREIGN KEY (company_id) REFERENCES Clients (id) ON DELETE CASCADE
+);
+
+CREATE TABLE Workers (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    workersName NVARCHAR(80) NOT NULL,
+    salary INT NOT NULL,
+    position NVARCHAR(20) NOT NULL 
+);
+
+CREATE TABLE CancelledOrders (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    reason NVARCHAR(200) NOT NULL,
+    cost INT NOT NULL,
+    cancelledordersName NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Reviews (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    rating INT NOT NULL,
+    review NVARCHAR(500) NOT NULL,
+    company_id INT NOT NULL,
+    FOREIGN KEY (company_id) REFERENCES Clients (id) ON DELETE CASCADE
+);
+
+>----------------------------------------------------------------------------------------INSERT--------------------------------------------------------------------------------------------<
+
+INSERT INTO Clients (clientsName, tariff, contacts)
+VALUES ('ООО Карандаш', 50000, '+8 800 555 45 32'), ('ООО Ведро', 10000, '+8 865 555 43 44'), ('ООО Вышка', 75000, '+8 689 555 85 35')
+
+INSERT INTO OrdersHistory (company_id, deadline, cost, areas)
+VALUES (1, '2026-10-13 13:00:00.0000000', 10000, 'Forge'), (2, '2026-10-13 13:00:00.0000000', 35000, 'Main'), (3, '2026-10-13 13:00:00.0000000', 20000, 'Computers')
+
+INSERT INTO Requests (company_id, stage, deadline, cost, areas)
+VALUES (1, 'In Progress', '2026-10-13 13:00:00.0000000', 10000, 'Forge'), (2, 'In Progress', '2026-10-13 13:00:00.0000000', 35000, 'Main'), (3, 'In Progress', '2026-10-13 13:00:00.0000000', 20000, 'Computers')
+
+INSERT INTO Workers (workersName, salary, position)
+VALUES ('Mike A', 100000, 'Тех-обслуживание'), ('Tim B', 100000, 'Кузнец'), ('Bobik', 100000, 'Security')
+
+INSERT INTO CancelledOrders (reason, cost, cancelledordersName)
+VALUES ('Sleep', 10000, 'ООО Унитаз'), ('Steal', 10000, 'ООО Долги'), ('Fool', 10000, 'ООО Корыто')
+
+INSERT INTO Reviews (company_id, rating, review)
+VALUES (1, 4.6, 'Very good'), (2, 4, 'Good'), (3, 2.6, 'Bad')
+
+>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<
