@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="ВашПромоутер — промо-команда для событий, презентаций и открытий. Клиенты, отзывы и контакты.">
+        <title>ВашПромоутер — вход</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/base.css">
+        <link rel="stylesheet" href="static/css/admin.css">
+        <script src="static/js/login.js" defer></script>
+    </head>
+    <body>
+        <section class="auth-screen" id="auth-screen">
+            <div class="auth-card">
+                <a class="brand auth-brand" href="index.html"><span class="brand-mark">вп<span>↗</span></span><span>ваш<span class="brand-light">промоутер</span><small>РАБОТАЕМ ВМЕСТЕ</small></span></a>
+                <div class="auth-copy">
+                    <p class="eyebrow">РАБОЧЕЕ ПРОСТРАНСТВО</p>
+                    <h1>Вход в панель управления</h1>
+                    <p>Демонстрационный вход для администратора.</p>
+                </div>
+                <div class="admin-login-label"><span>🔒</span> Вход администратора</div>
+                <form id="login-form" class="auth-form">
+                    <label>
+                        Электронная почта
+                        <input type="email" name="email" required placeholder="you@example.com" autocomplete="email">
+                    </label>
+                    <label>
+                        Пароль
+                        <input type="password" name="password" required minlength="6" placeholder="Минимум 6 символов" autocomplete="current-password">
+                    </label>
+                    <button class="button primary auth-submit" type="submit">Войти в кабинет <span>→</span></button>
+                    <p class="auth-hint">Демо-администратор: <b>admin@vashpromouter.ru</b> / <b>admin123</b></p>
+                </form>
+                <a class="text-link" href="index.html">← На главную</a>
+                <p class="auth-error" id="auth-error" role="alert"></p>
+            </div>
+        </section>
+    </body>
+</html>

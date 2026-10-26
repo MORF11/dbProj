@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="ВашПромоутер — промо-команда для событий, презентаций и открытий. Клиенты, отзывы и контакты.">
+        <title>ВашПромоутер — заявки</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/base.css">
+        <link rel="stylesheet" href="static/css/admin.css">
+        <script src="static/js/admin.js" defer></script>
+    </head>
+    <body>
+        <div class="protected-shell" id="protected-shell" hidden>
+            <a class="skip-link" href="#main">К содержимому</a>
+            <aside class="sidebar">
+                <a class="brand" href="#requests"><span class="brand-mark">вп<span>↗</span></span><span>ваш<span class="brand-light">промоутер</span><small>РАБОТАЕМ ВМЕСТЕ</small></span></a>
+                <div class="workspace">
+                    <span class="workspace-icon">В</span>
+                    <div><strong>ВашПромоутер</strong><small>Рабочее пространство</small></div>
+                    <span class="live-dot"></span>
+                </div>
+                <p class="nav-label">УПРАВЛЕНИЕ</p>
+                <nav aria-label="Основная навигация"><a href="#requests" data-page="requests"><span class="nav-icon">▦</span>Заявки<span class="nav-count" id="nav-count">8</span></a> <a href="#clients" data-page="clients"><span class="nav-icon">◉</span>Клиенты</a> <span class="nav-divider"></span> <a href="#history" data-page="history"><span class="nav-icon">◷</span>История заказов</a> <a href="#canceled" data-page="canceled"><span class="nav-icon">⊘</span>Отменённые</a></nav>
+            </aside>
+            <div class="app">
+                <header class="topbar">
+                    <div class="breadcrumb">Рабочее пространство <span>/</span> <strong id="crumb">Заявки</strong></div>
+                    <button class="logout-button" id="logout-button" type="button">Выйти</button>
+                </header>
+                <main id="main">
+                    <div class="page-heading">
+                        <div>
+                            <p class="eyebrow">ВСЁ ПОД КОНТРОЛЕМ</p>
+                            <h1 id="page-title">Заявки</h1>
+                            <p id="page-description">От первого контакта до успешного мероприятия.</p>
+                        </div>
+                        <button class="button primary" id="new-request"><span>＋</span> Новая заявка</button>
+                    </div>
+                    <section class="stats" aria-label="Статистика заявок" id="stats"></section>
+                    <div class="content-layout">
+                        <section class="panel main-panel">
+                            <div class="panel-heading">
+                                <div>
+                                    <h2 id="list-title">Все заявки <span id="total-count" class="count-pill"></span></h2>
+                                    <p id="list-description">Управляйте проектами в одном месте</p>
+                                </div>
+                                <button class="button secondary" id="export-button">↓ <span>Экспорт CSV</span></button>
+                            </div>
+                            <div class="tabs" id="tabs" role="group" aria-label="Фильтр по статусу"></div>
+                            <div class="filters">
+                                <label class="search">
+                                    <span aria-hidden="true">⌕</span>
+                                    <input type="search" id="search" placeholder="Найти заявку или клиента…" aria-label="Поиск">
+                                </label>
+                                <label class="select-label">
+                                    <select id="sort" aria-label="Сортировка">
+                                        <option value="date">Ближайшие даты</option>
+                                        <option value="name">По названию</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div id="data-view" class="data-view"></div>
+                            <div class="table-footer"><span id="result-count" aria-live="polite"></span><span>Демонстрационные данные <span class="tiny-dot">•</span></span></div>
+                        </section>
+                    </div>
+                    <footer class="footer"><span>© 2026 ВашПромоутер</span></footer>
+                </main>
+            </div>
+        </div>
+        <dialog id="request-dialog">
+            <form id="request-form">
+                <div class="dialog-heading">
+                    <div>
+                        <p class="eyebrow">НОВЫЙ ПРОЕКТ</p>
+                        <h2>Создать заявку</h2>
+                    </div>
+                    <button type="button" class="close-button" data-close aria-label="Закрыть">×</button>
+                </div>
+                <p class="muted">Добавьте детали — и начните собирать команду.</p>
+                <label>
+                    Название проекта
+                    <input name="title" required maxlength="100" placeholder="Например, открытие магазина">
+                </label>
+                <label>
+                    Клиент
+                    <input name="client" required maxlength="60" placeholder="Название компании">
+                </label>
+                <div class="form-grid">
+                    <label>
+                        Дата мероприятия
+                        <input name="date" type="date" required>
+                    </label>
+                    <label>
+                        Бюджет, ₽
+                        <input name="budget" type="number" required min="0" max="999999999" step="1" placeholder="45 000">
+                    </label>
+                </div>
+                <label>
+                    Адрес
+                    <input name="address" required maxlength="150" placeholder="Город, улица, площадка">
+                </label>
+                <div class="dialog-actions">
+                    <button type="button" class="button secondary" data-close>Отмена</button>
+                    <button class="button primary" type="submit">Создать заявку</button>
+                </div>
+            </form>
+        </dialog>
+        <dialog id="detail-dialog">
+            <div class="dialog-heading">
+                <h2>Детали заявки</h2>
+                <button class="close-button" data-close aria-label="Закрыть">×</button>
+            </div>
+            <div id="detail-content"></div>
+        </dialog>
+        <div id="toast" class="toast" role="status"></div>
+    </body>
+</html>
